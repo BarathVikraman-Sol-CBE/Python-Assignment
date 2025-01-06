@@ -41,3 +41,25 @@ We can directly run the python version using their exe files in the command line
 
 ---
 
+### Managing Packages
+
+To install a package in the virtual environment, run :
+
+```
+pip install requests
+```
+
+To update a package in the virtual environment, run :
+
+```
+pip install -U requests
+pip install --upgrade requests
+```
+
+To uninstall a package in the virtual environment, run :
+
+```
+pip uninstall requests
+```
+
+---
