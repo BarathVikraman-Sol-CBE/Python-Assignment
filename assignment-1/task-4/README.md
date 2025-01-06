@@ -9,3 +9,13 @@ python
 ```
 
 ---
+
+## Execute script using python interpreter
+
+To execute the python script file using the python interpreter, run :
+
+```
+python script.py
+```
+
+---
