@@ -19,3 +19,25 @@ python script.py
 ```
 
 ---
+
+## IPython Shell
+
+IPython stands for Interactive Python.  
+Standard distribution of Python comes with a REPL (Read-Evaluate-Print Loop) environment in the form of Python shell with >>> prompt. IPython (stands for Interactive Python) is an enhanced interactive environment for Python with many functionalities compared to the standard Python shell.
+
+To install this , run 
+
+```
+pip install ipython
+```
+
+It is executed using the command `ipython`.
+
+IPython offers more features than regular python interpreter as follows :
+
+* Provides magic commands.
+* Stores the history of interactions in more interactive way.
+* Powerful interactive Python shell.
+* Used in main kernel for Jupyter notebook.
+
+---
