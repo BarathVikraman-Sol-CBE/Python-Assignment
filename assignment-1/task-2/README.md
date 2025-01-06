@@ -14,7 +14,7 @@ Python3.x
 print("Hello World!")
 ```
 
-This gives us the flexibility to provide args to the print function for using custom separators other than spaces, stream output into files easily and also designed to change the builtin property by using builtin.print .
+This gives us the flexibility to provide args to the print function for using custom separators other than spaces, stream output into files easily and also designed to change the builtin property by using `__builtins__.print` .
 
 
 ```
@@ -26,7 +26,7 @@ __builtins__.print = a
 print()
 ```
 
-This will loop forever as we changed the function a to call whenever a call to print() is made.
+This will loop forever as we changed the function a() to call whenever a call to print() is made.
 
 ### Integer Division 
 
@@ -49,7 +49,7 @@ This gives the clarity that division operator will always return float and floor
 ### Input Function 
 
 Python2.x provides two functions to get input from the user namely `raw_input` and `input`.  
-The `raw_input` function returns the input as a string data type while `input` function coverts the value into appropriate data type and returns the value.  
+The `raw_input` function returns the input as a string data type while `input` function converts the value into appropriate data type and returns the value.  
 In python3.x, the `input` function gets the input from the user as a string data type and `raw_input` does not exist.
 
 Python2.x
@@ -72,7 +72,7 @@ Round function always return float value in python2.x whereas in python3.x it wi
 
 ### List Comprehension
 
-In python2.x, list comprehension does not provide namespace resulting in value changes.But in python3.x there is no namespace leak.
+In python2.x, list comprehension does not provide namespace resulting in value changes. But in python3.x there is no namespace leak.
 
 Python2.x
 ```
@@ -122,3 +122,18 @@ try:
 except NameError as error: 
     print (error, "THE ERROR HAS OCCURRED !") 
 ```
+
+---
+
+### Migrate Python2 code to Python3
+
+This can be done using the standard library 2to3 which is deprecated since 3.11 and removed from 3.13.
+So I cannot run the module which is not supported for that. I have got some other module names like `futurize ` and `python-modernize`.  
+When I tried to install them, I run into an error which shows
+
+```
+ERROR: Could not find a version that satisfies the requirement futurize (from versions: none)
+ERROR: No matching distribution found for futurize
+```
+
+I will try this after creating virtual environment.
