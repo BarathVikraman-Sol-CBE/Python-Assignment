@@ -39,7 +39,7 @@ def filter_primes(numbers:List[int]) -> List[int] :
         Returns a filtered list of integers with only prime numbers.
     """
 
-    filtered_numbers = []
+    filtered_numbers : List[int] = []
 
     for number in numbers:
         if is_prime(number):
@@ -56,11 +56,11 @@ def filter_primes(numbers:List[int]) -> List[int] :
 
 def main() -> None :
 
-    numbers = [num for num in range(10000)]
+    numbers : List[int] = [num for num in range(10000)]
 
-    filtered_nums = filter_primes(numbers)
+    filtered_nums : List[int] = filter_primes(numbers)
 
-    print(len(filtered_nums))
+    print(filtered_nums)
 
 
 if __name__ == "__main__" :
