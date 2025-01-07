@@ -6,5 +6,5 @@ print(7/2)
 
 user_input = int(input("Enter a number : "))
 
-for x in range(user_input):
-    print(x)
+for number in range(user_input):
+    print(number)

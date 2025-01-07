@@ -1,8 +1,8 @@
-# print "Hello"
+print "Hello"
 
-# print 7/2 # 3
+print 7/2 # 3
 
-# user_input = input("Enter a number : ")
+user_input = input("Enter a number : ")
 
-# for x in xrange(user_input):
-#     print x
+for number  in xrange(user_input):
+    print number
