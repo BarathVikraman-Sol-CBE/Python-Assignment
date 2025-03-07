@@ -1,6 +1,8 @@
 name: My Own Flake8 Test For Python 3.9, 3.10, 3.11
 
-on: [commit, push]
+on:
+  push
+  create
 
 jobs:
   test:
