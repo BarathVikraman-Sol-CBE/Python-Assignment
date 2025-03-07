@@ -1,8 +1,8 @@
 name: My Own Flake8 Test For Python 3.9, 3.10, 3.11
 
 on:
-  push
-  create
+  push:
+    # Trigger workflow when a push change is made.
 
 jobs:
   test:
