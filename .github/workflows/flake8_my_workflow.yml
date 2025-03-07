@@ -26,3 +26,6 @@ jobs:
       - name: Testing Flake8
         run: flake8 $(git ls-files '*.py')
         shell: bash
+      - name: Hello World
+        run: echo "Hello WOrld"
+        shell: bash
